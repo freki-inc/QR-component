@@ -22,6 +22,7 @@
     --text-color: hsl(216, 15%, 48%);
     --title-color: hsl(218, 44%, 22%);
     --attribution-color: hsl(228, 45%, 44%);
+    --box-shadow-color: hsla(0, 0%, 0%, 0.048);
     /* Typography */
     --title-font-size: 22px;
     --text-font-size: 15px;
@@ -35,14 +36,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    letter-spacing: 1px;
 }
 
 html, body {
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +57,7 @@ html, body {
     flex-direction: column;
     gap: 24px;
     border-radius: 20px;
-    filter: box-shadow(0px 25px 25px #000);
+    box-shadow: 0px 25px 25px var(--box-shadow-color);
     background-color: var(--container-background-color);
 }
 
@@ -90,9 +88,12 @@ html, body {
     line-height: 140%;
 }
 
-.attribution {
+footer {
     position: fixed;
     bottom: 0;
+}
+
+.attribution {
     font-size: 11px;
     text-align: center;
     padding: 1rem;
