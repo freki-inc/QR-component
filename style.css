@@ -98,4 +98,6 @@ footer {
     text-align: center;
     padding: 1rem;
 }
-.attribution a { color: var(--attribution-color); }
+.attribution a {
+    color: var(--attribution-color);
+}
