@@ -46,7 +46,7 @@ html, body {
     justify-content: center;
     align-items: center;
     background-color: var(--main-background-color);
-    font-family: "outfit";
+    font-family: "outfit", sans-serif;
 }
 
 .qr-card {
